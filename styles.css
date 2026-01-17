@@ -1,11 +1,11 @@
 :root {
-  --ink: #10131a;
-  --ink-soft: #323847;
-  --accent: #f0a026;
-  --accent-dark: #c27707;
-  --linen: #f6f1e8;
-  --mist: #ece6dd;
-  --shadow: rgba(16, 19, 26, 0.15);
+  --ink: #1d152a;
+  --ink-soft: #3a2b52;
+  --accent: #5b2a86;
+  --accent-dark: #4a1f73;
+  --linen: #f6f1fb;
+  --mist: #ede4f7;
+  --shadow: rgba(38, 17, 70, 0.2);
 }
 
 * {
@@ -17,7 +17,7 @@
 body {
   font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
   color: var(--ink);
-  background: linear-gradient(120deg, #efe7dd 0%, #fdf7f0 40%, #efe2d5 100%);
+  background: linear-gradient(120deg, #efe6f7 0%, #f7f0fb 40%, #e6dcf6 100%);
   min-height: 100vh;
 }
 
@@ -38,16 +38,18 @@ a {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 48px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--accent);
 }
 
 .logo {
-  width: 56px;
   height: 56px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 10px 22px rgba(16, 19, 26, 0.18);
-  background: #ffffff;
-  padding: 6px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 10px 22px rgba(38, 17, 70, 0.2);
+  background: transparent;
+  padding: 0;
 }
 
 .nav {
