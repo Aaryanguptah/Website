@@ -41,15 +41,13 @@ a {
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 16px;
-  background: var(--ink);
-  color: var(--linen);
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-  letter-spacing: 1px;
+  object-fit: cover;
+  box-shadow: 0 10px 22px rgba(16, 19, 26, 0.18);
+  background: #ffffff;
+  padding: 6px;
 }
 
 .nav {
@@ -154,6 +152,27 @@ a {
   border-radius: 24px;
   padding: 20px;
   box-shadow: 0 20px 40px var(--shadow);
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.link-pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 19, 26, 0.14);
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(16, 19, 26, 0.15);
 }
 
 .metric-label {
@@ -300,6 +319,19 @@ a {
 .contact-actions {
   display: grid;
   gap: 12px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.95rem;
+}
+
+.contact-links a {
+  color: rgba(246, 241, 232, 0.9);
+  border-bottom: 1px solid rgba(246, 241, 232, 0.4);
+  padding-bottom: 2px;
 }
 
 .contact-note {
